@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <!-- Iconos bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Iconos fas fa -->
+    
+    <title>Pastelería Konichiwa</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <img class="logo" src="../img/logo.png" alt="Logo" width="40px" height="40px">
+        <label>Bienvenido Pastelería Konichiwa</label>
+        <div class="">
+          <a class="nav-link link-secondary" href=""> Salir <span class="glyphicon glyphicon-log-in"></span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="m-5 pl-5 pr-5">
+      <div class="container">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+          <h1 class="">Pastel de laura</h1>
+        </div>
+        <div class="div_detalle">
+          <h2>Resumen del pedido:</h2>
+          <p>
+            Sabores seleccionados:
+            <ol>
+              <li>Chocolate. ($200.00)</li>
+              <li>Fresa. ($200.00)</li>
+            </ol>
+          </p>
+          <p>
+            Adornos seleccionados:
+            <ol>
+              <li>Feliz cumpleaños. ($200.00)</li>
+              <li>Mar. ($200.00)</li>
+            </ol>
+          </p>
+        </div>
+        <div class="row mt-4">
+          <div class="col pb-5 mr-2 div_ges">
+            <label style="font-size: 18px;">Sabores</label>
+            <div class="table-responsive table-style pl-5 pr-5 table-fondo">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>
+                      <div>Sabor</div>
+                    </th>
+                    <th>
+                      <div>Precio</div>
+                    </th>
+                    <th>
+                      <div>Disponibles</div>
+                    </th>
+                    <th>
+                      <div>Acciones</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>Chocolate</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalSabor">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Fresa</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalSabor">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Frambuesa</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalSabor">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Vainilla</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalSabor">Editar</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col pb-5 ml-2 div_ges">
+            <label style="font-size: 18px;">Adornos</label>
+            <div class="table-responsive table-style pl-5 pr-5 table-fondo">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>
+                      <div>Adorno</div>
+                    </th>
+                    <th>
+                      <div>Precio</div>
+                    </th>
+                    <th>
+                      <div>Disponibles</div>
+                    </th>
+                    <th>
+                      <div>Acciones</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div>Feliz Cumpleaños</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalAdorno">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Corazones</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalAdorno">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Mar</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalAdorno">Editar</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>Boda</div>
+                    </td>
+                    <td>
+                      <div>$200</div>
+                    </td>
+                    <td>
+                      <div>5</div>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#modalAdorno">Editar</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <div class="modal fade" id="modalSabor" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar sabor</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form @submit="createUser">
+              <div class="form-group">
+                <label for="nameSabor">Nombre del sabor</label>
+                <input type="text" class="form-control" id="nameSabor" >
+              </div>
+              <div class="form-group">
+                <label for="precioSabor">Precio</label>
+                <input type="number" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="disponiblesS">Disponibles</label>
+                <input type="number" class="form-control" id="disponiblesS">
+              </div>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAdorno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar adorno</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form @submit="createUser">
+              <div class="form-group">
+                <label for="nameAdorno">Nombre del adorno</label>
+                <input type="text" class="form-control" id="nameAdorno" >
+              </div>
+              <div class="form-group">
+                <label for="precioAdorno">Precio</label>
+                <input type="number" class="form-control" id="precioAdorno">
+              </div>
+              <div class="form-group">
+                <label for="disponiblesA">Disponibles</label>
+                <input type="number" class="form-control" id="disponiblesA">
+              </div>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

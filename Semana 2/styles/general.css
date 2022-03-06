@@ -1,0 +1,97 @@
+/* @font-face 
+{
+    font-family: Bubbly;
+    src: url(Bubbly.otf);
+} */
+
+body
+{
+    background: url(../img/fondo.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 20px !important;
+}
+
+.table-fondo
+{
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+.logo
+{
+    border-radius: 10px;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.div_cuadro
+{
+    background: linear-gradient(171deg, rgba(2,0,36,1) 0%, rgba(121,9,117,1) 52%, rgba(0,212,255,1) 99%);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.div_cuadro2
+{
+    background: linear-gradient(192deg, rgba(2,0,36,1) 0%, rgba(121,9,117,1) 52%, rgba(0,212,255,1) 99%);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.div_title
+{
+    flex-direction: column;
+    display: flex;
+}
+
+.center_elemt
+{
+    display: grid;
+    align-items: center;
+}
+
+.div_resumen
+{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.div_detalle
+{
+    background-color: #ffd6dd52;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.div_total{
+    background-color: #4e0d4e36;
+    padding: 10px;
+    margin: 0 -10px -10px -10px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.div_ges
+{
+    background: linear-gradient(171deg, rgba(2,0,36,1) 0%, rgba(121,9,117,1) 52%, rgba(0,212,255,1) 99%);
+    border-radius: 10px;
+    color: white;
+}
+
+@media (min-width: 600px) 
+{
+    
+}
