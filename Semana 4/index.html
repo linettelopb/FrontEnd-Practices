@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/fb6148f9cc.js" crossorigin="anonymous"></script>
+
+    <title>Pokedex</title>
+</head>
+<body>
+    <section>
+        <!-- lateral izquiera  -->
+        <img class="pokedex" src="img/Pokedex.png" alt="Pokedex" >
+        <img class="imagePokemon" src="img/pokebola.jpg" alt="Pokemon" id="pokeImg" width="150px">
+        <input type="text" class="namePokemon" placeholder="Nombre pokemon" id="pokeName" name="pokeName">
+        <button class="searchPokemon" onclick="fetchPokemon()">-</button>
+        <input type="text" class="textNamePokemon"  id="pokemon" name="pokemon" disabled>
+
+        <!-- lateral derecha -->
+        <label class="label_type">Tipo:</label>
+        <input type="text" class="type_pokemon"  id="typePoke" name="typePoke" disabled>
+        
+        <div class="col-12 pt-2  div_info" style="padding: 0;">
+            <label class="title_esta ">Estadisticas</label>
+            <div class="col-12" >
+                <label class="">Hp:</label>
+                <input class="input_number"  id="PokeHp" name="PokeHp" disabled>
+            </div>
+            <div class="col-12" >
+                <label class="">Ataque:</label>
+                <input class="input_number"  id="PokeAttack" name="PokeAttack" disabled>
+            </div>
+            <div class="col-12" >
+                <label class="">Defensa:</label>
+                <input class="input_number"  id="PokeDef" name="PokeDef" disabled>
+            </div>
+            <div class="col-12" >
+                <label class="">A. Especial:</label>
+                <input class="input_number"  id="PokeAttackE" name="PokeAttackE" disabled>
+            </div>
+            <div class="col-12" >
+                <label class="">D. Especial:</label>
+                <input class="input_number"  id="PokeDefE" name="PokeDefE" disabled>
+            </div>
+            <div class="col-12" >
+                <label class="">Velocidad:</label>
+                <input class="input_number"  id="PokeSpeed" name="PokeSpeed" disabled>
+            </div>
+        </div>
+        
+        <div class="col-12 pt-2 row div_move" >
+            <label class="col-12 text-center title_esta">Movimientos</label>
+            <div class="col-6">
+                <div class="col-12" >
+                    <input class="input_move"  id="mov1" name="mov1" disabled>
+                </div>
+                <div class="col-12" >
+                    <input class="input_move"  id="mov2" name="mov2" disabled>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="col-12" >
+                    <input class="input_move"  id="mov3" name="mov3" disabled>
+                </div>
+                <div class="col-12" >
+                    <input class="input_move"  id="mov4" name="mov4" disabled>
+                </div>
+            </div>
+        </div>
+        <div class="div_height">
+            <label class="">Altura:</label>
+            <input class="input_corpo"  id="height" name="height" disabled>
+            <span>mm</span>
+        </div>
+        <div class="div_weight">
+            <label class="">Peso:</label>
+            <input class="input_corpo"  id="weight" name="weight" disabled>
+            <span>Kg</span>
+        </div>
+
+        
+    </section>
+</body>
+<footer>
+    <script src="index.js"></script>
+</footer>
+</html>
